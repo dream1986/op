@@ -3,7 +3,7 @@ x64精简版![](https://img.shields.io/github/workflow/status/binge8/op/x64精�
 # Actions-OpenWrt  
 🚀 推荐本人[➦自用稳定机场](https://www.v2aky.jp.net/#/register?code=itwRdCr9),返佣是我持续编译的最大动力.本仓库永久每天早上会编译出最新固件。    
 
-注：#所有固件默认管理IP为：192.168.7.1 密码：password   
+## 注：所有固件默认管理IP为：192.168.7.1 密码：password   
   主仓库使用[➦L大佬](https://github.com/coolsnowwolf/lede)，armv8系列打包库和内核使用[➦F大佬](https://github.com/unifreq)
 
 ## 固件特色：   
