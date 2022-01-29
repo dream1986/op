@@ -3,20 +3,16 @@ x64精简版![](https://img.shields.io/github/workflow/status/binge8/op/x64精�
 # Actions-OpenWrt  
 🚀 推荐本人[➦自用稳定机场](https://www.v2aky.jp.net/#/register?code=itwRdCr9),返佣是我持续编译的最大动力.本仓库永久每天早上会编译出最新固件。    
 
-注：本仓库纯属个人根据自己的设备配置使用，直接FORK本仓库是不能自动编译并发布release的，请看下面使用方法。
+注：#所有固件默认管理IP为：192.168.7.1 密码：password  
 
-## 使用方法
+## 固件特色：   
+1.各型号固件分为精简版(只具备基本上网功能和极少数插件)和懒人版(包含大部分插件的高大全版本)   
+2.精简版在系统-软件包,里面刷新列表后查找要安装的插件,可以在线安装懒人版里所有插件,此功能只需安装插件的luci即可(如luci-app-openclash)，其他依赖会全部自动跟着安装好,需要什么安装什么。   
+3.armv8系列固件包含目前常用的电视盒子openwrt固件(N1、贝壳云等)，F大发布的支持的盒子固件这里都有.   
+4.armv8系列固件内置晶晨宝盒,可以在线更新最新固件、内核等。   
+5.本仓库每天早上会自动编译出所有最新固件。   
+6.欢迎有缘人一起维护。(因本人小白且时间有限)   
 
-前面的自动编译以及个性化定制等修改，全部来源于P3TER大神的[代码](https://github.com/P3TERX/Actions-OpenWrt)及[教程](https://p3terx.com/archives/build-openwrt-with-github-actions.html)。</br>
-这里只说发布release的方法，部分代码借鉴或使用[id77](https://github.com/id77/OpenWrt-K2P-firmware)和[ncipollo](https://github.com/ncipollo/release-action)两位大神：</br>
- 1、自动编译及自动发布你也可以使用本仓库模板，请点击上面的Use this template(使用此模板）来创建你自己的新仓库。</br>
- 2、点击右上角你的头像-settings-Developer settings-Personal access tokens生成新的令牌，选中public_repo，随便起名保存，同时复制令牌内容。</br>
- 3、回到刚建的新仓库，settings-Secrets-Add a new secret(添加密匙），取名RELEASES_TOKEN,把刚才复制的令牌粘贴进去保存。</br>
- 4、定时编译的时间、触发自动编译的方法修改都在上面P3TERX大佬的教程里有说明。 </br>
- 5、最关键一步，因为我在里面加入了开始编译和编译成功的微信消息提醒，所以除以上步骤外，还要把pushbot（微信推送）</br>
- 的令牌保存到secret里，取名pushbot.和前面第三步的添加密匙方法一致，否则差了这一步，刚开始编译就因为微信推送</br>
- 找不到令牌而宣告失败。或者取消微信推送。</br>
- 
 ## 致谢
 
 - [P3TERX](https://github.com/P3TERX/Actions-OpenWrt)   
